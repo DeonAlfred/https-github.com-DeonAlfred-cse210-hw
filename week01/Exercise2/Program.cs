@@ -58,5 +58,14 @@ class Program
         {
             Console.WriteLine("Your grade is an F.");
         }
+        
+        if (gradePercentage >= 70)
+        {
+            Console.WriteLine("You passed the course.");
+        }
+        else
+        {
+            Console.WriteLine("You did not pass the course.");
+        }
     }
 }
