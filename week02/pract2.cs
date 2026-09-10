@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography;
 
 class Program
 {
@@ -13,14 +14,24 @@ class Program
         double materialAmount = kitchen.GetArea();
 
         Console.WriteLine(
-            $"The blind is {kitchen._width} inches wide, " +
+            $"The blind is {kitchen._height} inches wide, " +
             $"{kitchen._height} inches tall, and is painted {kitchen._color}."
         );
 
         Console.WriteLine($"The area of the blind is {materialAmount} square inches.");
-    }
-}
 
+   
+        Blind bathroom = new Blind();
+        bathroom._width = 36;
+        bathroom._height = 72;
+        bathroom._color = "blue";
+        Console.WriteLine($"The blind is {bathroom._height} inches wide, " +
+            $"{bathroom._height} inches tall, and is painted {bathroom._color}."
+        );
+
+        Console.WriteLine($"The area of the blind is {d} square inches.");
+
+}
 public class Blind
 {
     public double _width;
@@ -31,4 +42,10 @@ public class Blind
     {
         return _width * _height;
     }
+
+    public void d()
+        {
+            return bathroom._color;
+        }
+}
 }
