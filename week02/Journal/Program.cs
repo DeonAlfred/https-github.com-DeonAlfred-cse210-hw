@@ -178,8 +178,8 @@ public class PromptGenerator
         "What was the best part of your day?",
         "What are you grateful for today?",
         "What did you learn today?",
-        "What was something interesting that happened today?",
-        "What is something you want to accomplish tomorrow?"
+        "What is something that made you smile today?",
+        "What is a goal you have for tomorrow?",
     };
 
 
