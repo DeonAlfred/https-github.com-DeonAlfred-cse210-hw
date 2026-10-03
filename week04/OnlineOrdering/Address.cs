@@ -5,7 +5,7 @@ public class Address
 
     private string _country;
     private string _street;
-    
+
 
     public Address(string street, string city, string state, string country)
     {
@@ -15,11 +15,11 @@ public class Address
         _country = country;
     }
 
-    
+
     public bool IsInUsa()
     {
         return _country == "USA";
-        
+
     }
 
     public string GetAddressString()
@@ -34,8 +34,8 @@ public class Address
 
     public string GetCity()
     {
-        return  _city;
-        
+        return _city;
+
     }
 
     public string GetState()
@@ -44,7 +44,7 @@ public class Address
     }
     public string GetCountry()
     {
-        return  _country;
+        return _country;
     }
     public Address GetAddress()
     {

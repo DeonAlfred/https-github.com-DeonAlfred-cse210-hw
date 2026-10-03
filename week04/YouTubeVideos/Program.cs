@@ -25,7 +25,7 @@ class Program
         video3.AddComment(new Comment("Mary", "This is a great chess tutorial!"));
         video3.AddComment(new Comment("Angelou", "I Love this !"));
 
-        Video video4= new Video("World of Birds", "Johnathan Watt", 900);
+        Video video4 = new Video("World of Birds", "Johnathan Watt", 900);
         video4.AddComment(new Comment("Jamie", "I loved watching this!"));
         video4.AddComment(new Comment("Greg", "This is a stress reliever!"));
         video4.AddComment(new Comment("Dianne", "Can you mmake more please?"));

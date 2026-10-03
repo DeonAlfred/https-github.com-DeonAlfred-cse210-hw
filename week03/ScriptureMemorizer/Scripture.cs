@@ -19,7 +19,7 @@ public class Scripture
             _words.Add(new Word(word));
         }
     }
-// HideRandomWord method randomly selects a word from the list of words that are not hidden and hides it. It uses the Random class to generate a random index for the visible words. If there are no visible words left, it does nothing.
+    // HideRandomWord method randomly selects a word from the list of words that are not hidden and hides it. It uses the Random class to generate a random index for the visible words. If there are no visible words left, it does nothing.
     public void HideRandomWord()
     {
         Random random = new Random();

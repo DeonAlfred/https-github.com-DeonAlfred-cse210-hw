@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Reflection.Emit;
 public class Order
 {
-    private List <Product> _products;
+    private List<Product> _products;
     private Customer _customer;
-    public Order (Customer customer)
+    public Order(Customer customer)
     {
         _customer = customer;
         _products = new List<Product>();
@@ -18,8 +18,8 @@ public class Order
 
     public double GetTotalCost()
     {
-        double total =  0;
-        foreach (Product product  in _products)
+        double total = 0;
+        foreach (Product product in _products)
         {
             total += product.GetTotalCost();
         }
@@ -36,10 +36,10 @@ public class Order
 
     public string GetPackingLabel()
     {
-        string label ="Packing Label\n";
+        string label = "Packing Label\n";
         foreach (Product product in _products)
         {
-             label += $"Product:{product.GetName()}| ID: {product.GetProductId()}\n";
+            label += $"Product:{product.GetName()}| ID: {product.GetProductId()}\n";
         }
         return label;
 

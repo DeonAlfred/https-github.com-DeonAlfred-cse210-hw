@@ -9,18 +9,18 @@ class Program
         int gradePercentage = int.Parse(ValueEnteredFromUser);
 
 
-    
-         if (gradePercentage >= 97)
+
+        if (gradePercentage >= 97)
         {
             Console.WriteLine("Your grade is an A+.");
         }
-     
-         else if (gradePercentage >= 93)
+
+        else if (gradePercentage >= 93)
         {
             Console.WriteLine("Your grade is an A.");
 
         }
-         else if (gradePercentage >= 90)
+        else if (gradePercentage >= 90)
         {
             Console.WriteLine("Your grade is an A-.");
 
@@ -58,7 +58,7 @@ class Program
         {
             Console.WriteLine("Your grade is an F.");
         }
-        
+
         if (gradePercentage >= 70)
         {
             Console.WriteLine("You passed the course.");

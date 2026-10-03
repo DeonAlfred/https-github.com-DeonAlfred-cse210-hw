@@ -3,17 +3,17 @@ class Program
     static void Main(string[] args)
     {
         {
-        // Create a fraction with the default constructor
-        Fraction fraction1 = new Fraction(3);
-        Console.WriteLine($"Fraction 1: {fraction1.GetTop()}");
-        Console.WriteLine($"Decimal value: {fraction1.GetDecimalValue()}");
+            // Create a fraction with the default constructor
+            Fraction fraction1 = new Fraction(3);
+            Console.WriteLine($"Fraction 1: {fraction1.GetTop()}");
+            Console.WriteLine($"Decimal value: {fraction1.GetDecimalValue()}");
         }
-        
+
         {
         }
-        
+
     }
-    
+
 }
 
 public class Fraction

@@ -8,8 +8,8 @@ class Program
         Address addressl = new Address
         (
          "123 Main street",
-        "Seattle" ,
-         "Washington" ,
+        "Seattle",
+         "Washington",
          "USA"
         );
 
@@ -23,36 +23,36 @@ class Program
         (
             "Laptop",
             "P001",
-             899,1
+             899, 1
         );
 
 
-         Product product2= new Product
-        (
-            "Mouse",
-            "P002",
-             899,2
-        );
+        Product product2 = new Product
+       (
+           "Mouse",
+           "P002",
+            899, 2
+       );
 
 
         Product product3 = new Product
         (
             "Keyboard",
             "P003",
-             899,1
+             899, 1
         );
 
         // Order1
-        Order  order1 = new Order(customerone);
+        Order order1 = new Order(customerone);
         order1.AddProduct(product1);
         order1.AddProduct(product2);
         order1.AddProduct(product3);
- //customer no 2
+        //customer no 2
         Address address2 = new Address
         (
          "144 Klein Drakenstein street",
-         "Paarl" ,
-         "Cape Town" ,
+         "Paarl",
+         "Cape Town",
          "South Africa"
         );
 
@@ -61,7 +61,7 @@ class Program
             "Mary Ashton",
             address2
         );
-        
+
         Product product4 = new Product
         (
             "chair",
@@ -71,23 +71,23 @@ class Program
         );
 
 
-         Product product5= new Product
-        (
-            "Mic",
-            "P005",
-             120,2
-        );
+        Product product5 = new Product
+       (
+           "Mic",
+           "P005",
+            120, 2
+       );
 
 
         Product product6 = new Product
         (
             "Headphones",
             "P006",
-             76.1,1
+             76.1, 1
         );
 
         // Order2
-        Order  order2 = new Order(customertwo);
+        Order order2 = new Order(customertwo);
         order2.AddProduct(product4);
         order2.AddProduct(product5);
         order2.AddProduct(product6);

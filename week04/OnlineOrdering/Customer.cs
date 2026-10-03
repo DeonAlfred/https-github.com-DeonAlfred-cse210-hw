@@ -1,9 +1,9 @@
 public class Customer
 {
-   private string _name;
-   private Address _address;
+    private string _name;
+    private Address _address;
 
-   public Customer(string name, Address address)
+    public Customer(string name, Address address)
     {
         _name = name;
         _address = address;
@@ -12,7 +12,7 @@ public class Customer
 
     public bool IsInUSA()
     {
-        return _address .IsInUsa();
+        return _address.IsInUsa();
     }
 
     public string GetName()
