@@ -13,6 +13,6 @@ public class Reference
     // Short method to get the display text of the reference in the format "Book Chapter:Verse".
     public string GetDisplayText()
     {
-        return $"{_book} {_chapter}:{_verse}";
+        return $"""{_book} {_chapter}:{_verse}""";
     }
 }

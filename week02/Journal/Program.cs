@@ -16,14 +16,14 @@ class Program
         while (choice != 5)
         {
             Console.WriteLine();
-            Console.WriteLine("Please select one of the following choices:");
-            Console.WriteLine("1. Write");
-            Console.WriteLine("2. Display");
-            Console.WriteLine("3. Save");
-            Console.WriteLine("4. Load");
-            Console.WriteLine("5. Quit");
+            Console.WriteLine("""Please select one of the following choices:""");
+            Console.WriteLine("""1. Write""");
+            Console.WriteLine("""2. Display""");
+            Console.WriteLine("""3. Save""");
+            Console.WriteLine("""4. Load""");
+            Console.WriteLine("""5. Quit""");
 
-            Console.Write("What would you like to do? ");
+            Console.Write("""What would you like to do? """);
 
             choice = int.Parse(Console.ReadLine());
 
@@ -37,25 +37,25 @@ class Program
             }
             else if (choice == 3)
             {
-                Console.Write("Enter the filename to save to: ");
+                Console.Write("""Enter the filename to save to: """);
                 string filename = Console.ReadLine();
 
                 journal.SaveToFile(filename);
             }
             else if (choice == 4)
             {
-                Console.Write("Enter the filename to load: ");
+                Console.Write("""Enter the filename to load: """);
                 string filename = Console.ReadLine();
 
                 journal.LoadFromFile(filename);
             }
             else if (choice == 5)
             {
-                Console.WriteLine("Goodbye!");
+                Console.WriteLine("""Goodbye!""");
             }
             else
             {
-                Console.WriteLine("Invalid choice.");
+                Console.WriteLine("""Invalid choice.""");
             }
         }
     }
@@ -74,9 +74,9 @@ public class Journal
         string prompt = promptGenerator.GetRandomPrompt();
 
         Console.WriteLine();
-        Console.WriteLine($"Prompt: {prompt}");
+        Console.WriteLine($"""Prompt: {prompt}""");
 
-        Console.Write("Response: ");
+        Console.Write("""Response: """);
         string response = Console.ReadLine();
 
         string date = DateTime.Now.ToShortDateString();
@@ -89,7 +89,7 @@ public class Journal
 
         _entries.Add(entry);
 
-        Console.WriteLine("Entry added.");
+        Console.WriteLine("""Entry added.""");
     }
 
 
@@ -99,7 +99,7 @@ public class Journal
 
         if (_entries.Count == 0)
         {
-            Console.WriteLine("No journal entries found.");
+            Console.WriteLine("""No journal entries found.""");
             return;
         }
 
@@ -122,7 +122,7 @@ public class Journal
             }
         }
 
-        Console.WriteLine("Journal saved.");
+        Console.WriteLine("""Journal saved.""");
     }
 
 
@@ -130,7 +130,7 @@ public class Journal
     {
         if (!File.Exists(filename))
         {
-            Console.WriteLine("File not found.");
+            Console.WriteLine("""File not found.""");
             return;
         }
 
@@ -149,7 +149,7 @@ public class Journal
             _entries.Add(entry);
         }
 
-        Console.WriteLine("Journal loaded.");
+        Console.WriteLine("""Journal loaded.""");
     }
 }
 
@@ -163,9 +163,9 @@ public class Entry
 
     public void Display()
     {
-        Console.WriteLine($"Date: {_date}");
-        Console.WriteLine($"Prompt: {_prompt}");
-        Console.WriteLine($"Response: {_response}");
+        Console.WriteLine($"""Date: {_date}""");
+        Console.WriteLine($"""Prompt: {_prompt}""");
+        Console.WriteLine($"""Response: {_response}""");
         Console.WriteLine();
     }
 }
@@ -175,11 +175,11 @@ public class PromptGenerator
 {
     private List<string> _prompts = new List<string>()
     {
-        "What was the best part of your day?",
-        "What are you grateful for today?",
-        "What did you learn today?",
-        "What is something that made you smile today?",
-        "What is a goal you have for tomorrow?",
+        """What was the best part of your day?""",
+        """What are you grateful for today?""",
+        """What did you learn today?""",
+        """What is something that made you smile today?""",
+        """What is a goal you have for tomorrow?""",
     };
 
 

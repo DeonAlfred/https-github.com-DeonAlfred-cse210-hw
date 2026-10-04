@@ -5,8 +5,8 @@ class Program
         {
             // Create a fraction with the default constructor
             Fraction fraction1 = new Fraction(3);
-            Console.WriteLine($"Fraction 1: {fraction1.GetTop()}");
-            Console.WriteLine($"Decimal value: {fraction1.GetDecimalValue()}");
+            Console.WriteLine($"""Fraction 1: {fraction1.GetTop()}""");
+            Console.WriteLine($"""Decimal value: {fraction1.GetDecimalValue()}""");
         }
 
         {
@@ -67,7 +67,7 @@ public class Fraction
     // Return the fraction as a string
     public string GetFractionString()
     {
-        return $"{_top}/{_bottom}";
+        return $"""{_top}/{_bottom}""";
     }
 
     // Return the fraction as a decimal

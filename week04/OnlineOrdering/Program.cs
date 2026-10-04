@@ -7,38 +7,38 @@ class Program
         //customer no 1
         Address addressl = new Address
         (
-         "123 Main street",
-        "Seattle",
-         "Washington",
-         "USA"
+         """123 Main street""",
+        """Seattle""",
+         """Washington""",
+         """USA"""
         );
 
         Customer customerone = new Customer
         (
-            "Alex Winston",
+            """Alex Winston""",
             addressl
         );
 
         Product product1 = new Product
         (
-            "Laptop",
-            "P001",
+            """Laptop""",
+            """P001""",
              899, 1
         );
 
 
         Product product2 = new Product
        (
-           "Mouse",
-           "P002",
+           """Mouse""",
+           """P002""",
             899, 2
        );
 
 
         Product product3 = new Product
         (
-            "Keyboard",
-            "P003",
+            """Keyboard""",
+            """P003""",
              899, 1
         );
 
@@ -50,22 +50,22 @@ class Program
         //customer no 2
         Address address2 = new Address
         (
-         "144 Klein Drakenstein street",
-         "Paarl",
-         "Cape Town",
-         "South Africa"
+         """144 Klein Drakenstein street""",
+         """Paarl""",
+         """Cape Town""",
+         """South Africa"""
         );
 
         Customer customertwo = new Customer
         (
-            "Mary Ashton",
+            """Mary Ashton""",
             address2
         );
 
         Product product4 = new Product
         (
-            "chair",
-            "P004",
+            """chair""",
+            """P004""",
              100,
              2
         );
@@ -73,16 +73,16 @@ class Program
 
         Product product5 = new Product
        (
-           "Mic",
-           "P005",
+           """Mic""",
+           """P005""",
             120, 2
        );
 
 
         Product product6 = new Product
         (
-            "Headphones",
-            "P006",
+            """Headphones""",
+            """P006""",
              76.1, 1
         );
 
@@ -94,20 +94,20 @@ class Program
 
 
         // Display the orders
-        Console.WriteLine("====================================================");
-        Console.WriteLine("Order 1");
-        Console.WriteLine("====================================================");
+        Console.WriteLine("""====================================================""");
+        Console.WriteLine("""Order 1""");
+        Console.WriteLine("""====================================================""");
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
-        Console.WriteLine($"Total Cost: ${order1.GetTotalCost():F2}");
+        Console.WriteLine($"""Total Cost: ${order1.GetTotalCost():F2}""");
 
 
-        Console.WriteLine("====================================================");
-        Console.WriteLine("Order 2");
-        Console.WriteLine("====================================================");
+        Console.WriteLine("""====================================================""");
+        Console.WriteLine("""Order 2""");
+        Console.WriteLine("""====================================================""");
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
-        Console.WriteLine($"Total Cost: ${order2.GetTotalCost():F2}");
+        Console.WriteLine($"""Total Cost: ${order2.GetTotalCost():F2}""");
 
 
 

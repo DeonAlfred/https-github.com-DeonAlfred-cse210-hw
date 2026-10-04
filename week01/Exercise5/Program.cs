@@ -23,12 +23,12 @@ class Program
 
     static void DisplayWelcome()
     {
-        Console.WriteLine("Welcome to the Program!");
+        Console.WriteLine("""Welcome to the Program!""");
     }
 
     static string PromptUserName()
     {
-        Console.Write("Please enter your name: ");
+        Console.Write("""Please enter your name: """);
         string name = Console.ReadLine();
 
         return name;
@@ -36,7 +36,7 @@ class Program
 
     static int PromptUserNumber()
     {
-        Console.Write("Please enter your favorite number: ");
+        Console.Write("""Please enter your favorite number: """);
         int number = int.Parse(Console.ReadLine());
 
         return number;
@@ -49,6 +49,6 @@ class Program
 
     static void DisplayResult(string name, int squaredNumber)
     {
-        Console.WriteLine($"{name}, the square of your number is {squaredNumber}");
+        Console.WriteLine($"""{name}, the square of your number is {squaredNumber}""");
     }
 }

@@ -10,20 +10,20 @@ class Program
     {
         Resume resume = new Resume();
 
-        resume._name = "Jake Smith";
+        resume._name = """Jake Smith""";
 
         resume._jobs.Add(new Job
         {
-            _jobTitle = "Software Developer",
-            _company = "ABC Company",
+            _jobTitle = """Software Developer""",
+            _company = """ABC Company""",
             _startYear = 2020,
             _endYear = 2023
         });
 
         resume._jobs.Add(new Job
         {
-            _jobTitle = "Senior Developer",
-            _company = "XYZ Company",
+            _jobTitle = """Senior Developer""",
+            _company = """XYZ Company""",
             _startYear = 2023,
             _endYear = 2026
         });
@@ -41,8 +41,8 @@ public class Resume
 
     public void Display()
     {
-        Console.WriteLine($"Name: {_name}");
-        Console.WriteLine("Jobs:");
+        Console.WriteLine($"""Name: {_name}""");
+        Console.WriteLine("""Jobs:""");
 
         // Loop through every Job in the list
         foreach (Job job in _jobs)
@@ -62,7 +62,7 @@ public class Job
 
     public void Display()
     {
-        Console.WriteLine($"{_jobTitle} ({_company})");
-        Console.WriteLine($"{_startYear} - {_endYear}");
+        Console.WriteLine($"""{_jobTitle} ({_company})""");
+        Console.WriteLine($"""{_startYear} - {_endYear}""");
     }
 }

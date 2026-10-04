@@ -56,11 +56,11 @@ public class Scripture
 
     public string GetDisplayText()
     {
-        string result = _reference.GetDisplayText() + " - ";
+        string result = _reference.GetDisplayText() + """ - """;
 
         foreach (Word word in _words)
         {
-            result += word.GetDisplayText() + " ";
+            result += word.GetDisplayText() + """ """;
         }
 
         return result;

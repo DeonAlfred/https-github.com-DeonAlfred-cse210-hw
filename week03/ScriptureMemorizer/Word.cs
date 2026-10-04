@@ -25,7 +25,7 @@ public class Word
     {
         if (_isHidden)
         {
-            return "_____";
+            return """_____""";
         }
 
         return _text;
