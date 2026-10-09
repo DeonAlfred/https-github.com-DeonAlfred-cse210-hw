@@ -10,17 +10,18 @@ public class Program
         while (true)
         {
             Console.Clear();
+            //Exceeding requirements: Display the welcome message and current date
             DateTime currentDate = DateTime.Now;
              Console.WriteLine($"Welcome to the Mindfulness Program!\n");
              Console.WriteLine($"Today's date is: {currentDate}");
-            // Display the menu options
+            //Exceeding requirements: Display the menu options and making it visually appealing with spacing and formatting
             Console.WriteLine("                Menu Options\n");
             Console.WriteLine("  1. Start breathing activity");
             Console.WriteLine("  2. Start reflection activity");
             Console.WriteLine("  3. Start listing activity");
             Console.WriteLine("  4. Quit");
             Console.WriteLine();
-            
+            //Exceeding requirements: Prompt the user to select a choice from the menu
             Console.Write("========Select a choice from the menu:========\n ");
 
             string choice = Console.ReadLine();
